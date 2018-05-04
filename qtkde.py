@@ -22,7 +22,7 @@ class Example(QtGui.QWidget):
         key = e.key()
         shift = QtCore.Qt.ShiftModifier and e.modifiers()
         ctrl = QtCore.Qt.ControlModifier and e.modifiers()
-        alt = QtCore.Qt.ControlModifier and e.modifiers()
+        alt = QtCore.Qt.AltModifier and e.modifiers()
         
         a0 = kkiface.translateQtKey(key)
         kkiface.sendKeyPress(e.text(), a0, shift, ctrl, alt, signature="sibbb")
